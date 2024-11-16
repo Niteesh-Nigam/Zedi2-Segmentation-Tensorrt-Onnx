@@ -7,10 +7,11 @@ setup(
     version='0.0.0',
     packages=find_packages(include=['src']),
     data_files=[
-        ('share/ament_index/resource_index/packages',
-         ['resource/' + package_name]),
+        ('share/ament_index/resource_index/packages', ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/launch', ['launch/startup_launch.py', 'launch/video_sample_launch.py']),
+        ('share/' + package_name + '/test videos', ['test videos/warehouse.mp4']),
+        ('share/' + package_name + '/models', ['models/last.pt']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -24,6 +25,7 @@ setup(
             'yolov8_segment_node = src.yolov8_segment_node:main',
             'depth_subscriber_node = src.depth_subscriber_node:main',
             'video_publisher_node = src.video_publisher_node:main',
+            
         ],
     },
 )
