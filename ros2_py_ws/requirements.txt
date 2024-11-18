@@ -1,5 +1,0 @@
-rclpy
-sensor-msgs
-cv-bridge
-numpy
-opencv-python
