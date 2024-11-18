@@ -1,10 +1,5 @@
 #!/usr/bin/python3
 
-"""
-    This sample demonstrates how to subscribe to a depth topic
-    and process 32-bit depth values in a ROS2 application.
-"""
-
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
