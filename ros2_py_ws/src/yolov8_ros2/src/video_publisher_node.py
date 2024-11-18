@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
@@ -10,7 +12,7 @@ import os
 class VideoPublisherNode(Node):
     def __init__(self):
         super().__init__('video_publisher_node')
-        self.publisher = self.create_publisher(Image, '/camera/image_raw', 10)
+        self.publisher = self.create_publisher(Image, '/rgb/image_rect_color', 10)
         self.camera_info_pub = self.create_publisher(CameraInfo, '/camera/camera_info', 10)
         self.bridge = CvBridge()
 
