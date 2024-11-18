@@ -2,13 +2,14 @@
 # YOLOv8 ROS2 Segmentation Project
 
 This project integrates YOLOv8 segmentation with ROS2, enabling real-time object detection and segmentation using video input or live camera feeds. It also includes depth perception through a depth sensor.
-
+check out how to run launch file in this video
+https://drive.google.com/file/d/1cfTLJMpfOIZ6U6kdNcYgL9-wxIMveRlj/view?usp=sharing
 ## Setup Instructions
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone [<repository-url>](https://github.com/Niteesh-Nigam/Zedi2-Segmentation-Tensorrt-Onnx.git)
+   cd Zedi2-Segmentation-Tensorrt-Onnx/ros2_py_ws/src
    ```
 
 2. Install dependencies:
@@ -18,10 +19,15 @@ This project integrates YOLOv8 segmentation with ROS2, enabling real-time object
 
 3. Build the workspace:
    ```bash
+   cd ../..
    colcon build
    ```
 
 ## Launch Instructions
+   ```bash
+   source install/setup.bash
+   ros2 launch yolov8_ros2 startup_launch.py 
+   ```
 
 ### To use with a video sample:
 ```bash
