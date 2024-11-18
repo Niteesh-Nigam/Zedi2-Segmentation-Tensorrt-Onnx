@@ -31,10 +31,10 @@ ros2 launch yolov8_ros2 video_sample_launch.py
 ### To use with a live camera feed:
 Modify the visualization blocks and set the topics to:
 - Segmented image topic: `/camera/segmented_image`
-- Raw camera feed: `/camera/image_raw`
+- Raw camera feed: `/rgb/image_rect_color`
 
 ### Depth Sensor:
-The depth sensor publishes data to the `/camera/depth/image_raw` topic.
+The depth sensor publishes data to the `/depth/depth_registered` topic.
 
 ## Dataset Creation Methodology
 
