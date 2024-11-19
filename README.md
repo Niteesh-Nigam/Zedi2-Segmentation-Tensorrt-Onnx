@@ -7,7 +7,7 @@ Below you will find the steps to configure and launch using a .db3 bag file, mp4
 
 Skip to find out Dataset Creation Ideology and Steps.
 
-#check out how to configure and run launch file in this video#
+# check out how to configure and run launch file in this video
 https://drive.google.com/file/d/1cfTLJMpfOIZ6U6kdNcYgL9-wxIMveRlj/view?usp=sharing
 
 or follow the steps below
