@@ -14,9 +14,10 @@ setup(
             'launch/video_sample_launch.py'
         ]),
         ('share/' + package_name + '/test videos', ['test videos/warehouse.mp4']),
+        ('share/' + package_name + '/test videos', ['test videos/warehouse1.mp4']),
         ('share/' + package_name + '/models', [
             #'models/last.pt', 
-            #'models/best.pt',
+            'models/best.pt',
             #'models/last1.pt', 
             #'models/last2.pt', 
             'models/best1.pt', 

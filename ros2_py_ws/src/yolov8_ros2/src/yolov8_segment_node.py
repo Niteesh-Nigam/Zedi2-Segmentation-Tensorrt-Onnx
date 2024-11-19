@@ -20,7 +20,7 @@ class YOLOv8SegmentPublisherNode(Node):
         # Dynamically locate the model path
         try:
             package_share_dir = get_package_share_directory('yolov8_ros2')
-            model_path = os.path.join(package_share_dir, 'models', 'best1.pt')
+            model_path = os.path.join(package_share_dir, 'models', 'best.pt')
         except KeyError:
             self.get_logger().error("Could not find package 'yolov8_ros2'. Ensure it is installed and sourced.")
             return
@@ -56,7 +56,7 @@ class YOLOv8SegmentPublisherNode(Node):
             frame = self.bridge.imgmsg_to_cv2(msg, "bgr8")
 
             # Perform inference
-            results = self.model.predict(source=frame, conf=0.15, save=False)
+            results = self.model.predict(source=frame, conf=0.40, save=False)
             annotated_frame = results[0].plot()
 
             # Convert annotated frame to ROS2 image message

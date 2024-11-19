@@ -12,7 +12,7 @@ import os
 class VideoPublisherNode(Node):
     def __init__(self):
         super().__init__('video_publisher_node')
-        self.publisher = self.create_publisher(Image, '/rgb/image_rect_color', 10)
+        self.publisher = self.create_publisher(Image, '/robot1/zed2i/left/image_rect_color', 10)
         self.camera_info_pub = self.create_publisher(CameraInfo, '/camera/camera_info', 10)
         self.bridge = CvBridge()
 
