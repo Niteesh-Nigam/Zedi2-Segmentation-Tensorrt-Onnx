@@ -7,6 +7,9 @@ Below you will find the steps to configure and launch using a .db3 bag file, mp4
 
 Skip to find out Dataset Creation Ideology and Steps.
 
+Note: ROS2 Nodes are prone to crashes. Rebuild and source to launch the nodes again if errors arise.
+Additionally, consider removing directories "install", "build" and "log". Then rebuild the package.
+
 # check out how to configure and run launch file in this video
 https://drive.google.com/file/d/1jNNZgYGnExfzsVlry06uCLTBNI4Y0QEc/view?usp=sharing
 
