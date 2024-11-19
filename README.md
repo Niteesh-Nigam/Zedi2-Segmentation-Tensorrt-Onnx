@@ -119,7 +119,7 @@ zedi2/ros2_cpp_ws/src/yolov8_ros2/models
 ## Nodes Overview
 
 ### 1. **Video Publisher Node**
-- Publishes frames from a video file to `/camera/image_raw`.
+- Publishes frames from a video file to `/robot1/zed2i/left/image_rect_color`.
 - Provides synchronized camera info to `/camera/camera_info`.
 
 ### 2. **YOLOv8 Segmentation Node**
@@ -127,7 +127,7 @@ zedi2/ros2_cpp_ws/src/yolov8_ros2/models
 - Publishes segmented images to `/camera/segmented_image`.
 
 ### 3. **Depth Subscriber Node**
-- Subscribes to `/camera/depth/image_raw`.
+- Subscribes to `/depth/depth_registered`.
 - Logs received depth image information.
 
 ### 4. **Launch Files**
