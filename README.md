@@ -12,6 +12,14 @@ https://drive.google.com/file/d/1cfTLJMpfOIZ6U6kdNcYgL9-wxIMveRlj/view?usp=shari
 
 or follow the steps below
 
+Models are located in ../Zedi2-Segmentation-Tensorrt-Onnx/ros2_py_ws/src/yolov8_ros2/models/
+(best.pt, best1.pt, best2_dynamic.onnx, best21920x1080dynamic.engine)
+
+onnx and tensorrt have been set to dynamic for varying image size as Zedi2 produces configurable resolutions)
+
+make sure to set the configuration score in yolov8_segment_node.py (Line 59)
+located at ../Zedi2-Segmentation-Tensorrt-Onnx/ros2_py_ws/src/yolov8_ros2/src/
+
 ## Setup Instructions
 ### To use with a ROS2-BAG (.db3) file.
 
