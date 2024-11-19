@@ -2,8 +2,11 @@
 # YOLOv8 ROS2 Segmentation Project
 
 This project integrates YOLOv8 segmentation with ROS2, enabling real-time object detection and segmentation using ROs2-Bag, video input or live camera feeds.
+
 Below you will find the steps to configure and launch using a .db3 bag file, mp4 and steps to launch with live camera feed(Zed Wrapper not included)
+
 Skip to find out Dataset Creation Ideology and Steps.
+
 #check out how to configure and run launch file in this video#
 https://drive.google.com/file/d/1cfTLJMpfOIZ6U6kdNcYgL9-wxIMveRlj/view?usp=sharing
 
