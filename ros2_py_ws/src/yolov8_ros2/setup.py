@@ -26,7 +26,7 @@ setup(
             'models/best.pt',
             #'models/last1.pt', 
             #'models/last2.pt', 
-            'models/best1.pt',
+            #'models/best1.pt',
             'models/best3.pt', 
            # 'models/best2.pt', 
         ]),

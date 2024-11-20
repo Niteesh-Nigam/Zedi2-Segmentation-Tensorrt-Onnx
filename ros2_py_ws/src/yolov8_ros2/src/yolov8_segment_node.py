@@ -56,7 +56,7 @@ class YOLOv8SegmentPublisherNode(Node):
             frame = self.bridge.imgmsg_to_cv2(msg, "bgr8")
 
             # Perform inference
-            results = self.model.predict(source=frame, conf=0.40, save=False)
+            results = self.model.predict(source=frame, conf=0.20, save=False)
             annotated_frame = results[0].plot()
 
             # Convert annotated frame to ROS2 image message
