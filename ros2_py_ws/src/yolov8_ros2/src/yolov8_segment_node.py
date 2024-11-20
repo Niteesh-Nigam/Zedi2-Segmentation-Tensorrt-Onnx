@@ -20,7 +20,7 @@ class YOLOv8SegmentPublisherNode(Node):
         # Dynamically locate the model path
         try:
             package_share_dir = get_package_share_directory('yolov8_ros2')
-            model_path = os.path.join(package_share_dir, 'models', 'best.pt')
+            model_path = os.path.join(package_share_dir, 'models', 'best3.pt')
         except KeyError:
             self.get_logger().error("Could not find package 'yolov8_ros2'. Ensure it is installed and sourced.")
             return

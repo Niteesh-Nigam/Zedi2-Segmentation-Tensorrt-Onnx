@@ -18,7 +18,7 @@ class VideoPublisherNode(Node):
 
         try:
             package_share_dir = get_package_share_directory('yolov8_ros2')
-            self.video_path = os.path.join(package_share_dir, 'test videos', 'warehouse.mp4')
+            self.video_path = os.path.join(package_share_dir, 'test videos', 'warehouse1.mp4')
         except KeyError:
             self.get_logger().error("Could not find package 'yolov8_ros2'. Ensure it is installed and sourced.")
             return

@@ -1,10 +1,13 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
 import os
+from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
 
-    rviz_config_path = "/home/nitzz/testingzedi2/ros2_cpp_ws/src/yolov8_ros2/rviz_config/zedi2PR.rviz"
+    package_share_directory = get_package_share_directory('yolov8_ros2')
+    rviz_config_path = os.path.join(package_share_directory, 'rviz_config', 'zedi2PR.rviz')
+
     return LaunchDescription([
 
         Node(
@@ -36,4 +39,3 @@ def generate_launch_description():
             output='screen'
         ),
     ])
-

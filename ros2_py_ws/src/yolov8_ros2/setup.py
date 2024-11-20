@@ -13,6 +13,12 @@ setup(
             'launch/startup_launch.py', 
             'launch/video_sample_launch.py'
         ]),
+        ('share/' + package_name + '/rviz_config', [
+        'rviz_config/zedi2PR.rviz'
+    	]),
+    	('share/' + package_name + '/internship_assignment_sample_bag', [
+        'internship_assignment_sample_bag/internship_assignment_sample_bag_0.db3'
+    	]),
         ('share/' + package_name + '/test videos', ['test videos/warehouse.mp4']),
         ('share/' + package_name + '/test videos', ['test videos/warehouse1.mp4']),
         ('share/' + package_name + '/models', [
@@ -20,7 +26,8 @@ setup(
             'models/best.pt',
             #'models/last1.pt', 
             #'models/last2.pt', 
-            'models/best1.pt', 
+            'models/best1.pt',
+            'models/best3.pt', 
            # 'models/best2.pt', 
         ]),
         ('share/' + package_name + '/internship_assignment_sample_bag', [
